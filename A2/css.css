@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(160, 223, 228);
+    font-family: Comic;
+    color: rgb(58, 137, 143);
+    margin: 20;
+    text-align: center;
+}
+.cuerpo {
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+}
+h1 {
+    text-align: center;
+    font-family: Comic;
+    color: rgb(58, 137, 143) ;
+    font-size: 40px;
+}
+form {
+    justify-content: space-around;
+}
+/* label {
+    color: rgb(58, 137, 143) ;
+    justify-content: space-between;
+    text-align: center;
+    border-color:  rgb(58, 137, 143);
+} */
+select {
+    font-family: Comic;
+    margin: 20px;
+    border-color:rgb(58, 137, 143) ;
+    border-radius: 5px;
+}
