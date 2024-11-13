@@ -8,60 +8,74 @@
 </head>
 <body>
     <div class="cuerpo">
+        <br>
         <h1>Flexbox Display</h1>
-            <form id="Formulario">
+            <form id="flexForm">
                 <label for="flexDirection">Flex-Direction</label>
                 <select  name="flexDirection" id="flexDirection">
-                    <option value="">row</option>
-                    <option value="">column</option>  
+                    <option value="row">row</option>
+                    <option value="column">column</option>  
                 </select>          
                 <label for="justifyContent">Justify Content</label>
                 <select name="justifyContent" id="justifyContent">
-                    <option value="">flex-start</option>
-                    <option value="">space-evenly</option>
-                    <option value="">space-around</option>
-                    <option value="">space-between</option>
-                    <option value="">flex-end</option>
-                    <option value="">center</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="space-evenly">space-evenly</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-between">space-between</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
                 </select>
                 <label for="alignItems">Align-items</label>
                 <select name="alignItems" id="alignItems">
-                    <option value="">stretch</option>
-                    <option value="">flex-start</option>
-                    <option value="">flex-end</option>
-                    <option value="">center</option>
-                    <option value="">baseline</option>
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="baseline">baseline</option>
                 </select> 
                 <label for="flexWrap">Flex-wrap</label>
                 <select name="flexWrap" id="flexWrap">
-                    <option value="">no wrap</option>
-                    <option value="">wrap-reverse</option>
-                    <option value="">wrap</option>
+                    <option value="nowrap">no wrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option>
+                    <option value="wrap">wrap</option>
                 </select>
+            </form>
 
-                <div class="div1"></div>
-        </form>
+                <div class="container" id="flexContainer">
+                    <div class="item" id="item1">Div 1</div>
+                    <div class="item" id="item2">Div 2</div> 
+                    <div class="item" id="item3">Div 3</div>
+                </div>
+                
+                <div >
+                    <h2>Controles Div 1</h2> <br>
+                    <label for="width1">width:</label>
+                        <input type="text" id="width1" placeholder="Ej:20px (unidad pixel, px)">
+                    <label for="height1">height:</label>
+                        <input type="text" id="height1" placeholder="Ej:20px (unidad pixel, px)">
+                    <label for="order1">order:</label>
+                        <input type="number" id="order1" placeholder="Ej:20px (unidad pixel, px)">
+                </div>
+                <div>
+                    <h2>Controles Div 2</h2><br>
+                    <label for="width2">width:</label>
+                        <input type="text" id="width2" placeholder="Ej:20px (unidad pixel, px)">
+                    <label for="height2">height:</label>
+                        <input type="text" id="height2" placeholder="Ej:20px (unidad pixel, px)">
+                    <label for="order2">order:</label>
+                        <input type="number" id="order2" placeholder="Ej:20px (unidad pixel, px)">
+                </div>
+                <div>
+                    <h2>Controles Div 3</h2>
+                    <label for="width3">width:</label>
+                        <input type="text" id="width3" placeholder="Ej:20px (unidad pixel, px)">
+                    <label for="height3">height:</label>
+                        <input type="text" id="height3" placeholder="Ej:20px (unidad pixel, px)">
+                    <label for="order3">order:</label>
+                        <input type="number" id="order3" placeholder="Ej:20px (unidad pixel, px)">
+                </div>
+                <br><br><br>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
     const flexForm = document.getElementById('flexForm');
     const flexContainer = document.getElementById('flexContainer');
@@ -106,6 +120,5 @@
         document.getElementById(`order${i}`).addEventListener('input', applyStyles);
     }
 </script>
-
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../Downloads/Ejemplo CSS"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../HLC_T2-/A6"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HLC_T3"
+	}
+}

@@ -4,11 +4,13 @@ body {
     color: rgb(58, 137, 143);
     margin: 20;
     text-align: center;
+
 }
 .cuerpo {
     background-color: white;
-    margin: 0 auto;
+    margin: 1px auto;
     width: 70%;
+    box-shadow: 1px 1px 5px black;
 }
 h1 {
     text-align: center;
@@ -19,18 +21,31 @@ h1 {
 form {
     justify-content: space-around;
 }
-/* label {
-    color: rgb(58, 137, 143) ;
-    justify-content: space-between;
-    text-align: center;
-    border-color:  rgb(58, 137, 143);
-} */
 select {
     font-family: Comic;
     margin: 20px;
     border-color:rgb(58, 137, 143) ;
     border-radius: 5px;
+
 }
-.div1 {
+.container {
+    display: flex;
+    background-color: rgb(208, 243, 247); 
+    padding: 10px;
+    color: rgb(68, 154, 161);
+    margin: 20px
+}
+.item {
+    background-color: rgb(129, 193, 197); 
+    margin: 5px; 
+    padding: 20px; 
+    text-align : center;
+    transition-duration: 0.2s;
+}
+input {
+    border-color:  rgb(129, 193, 197);
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-right: 30px;
     
 }
