@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <video controls loop width="110%" height="110%" autoplay muted>
+        <source src="https://i.makeagif.com/media/6-12-2022/ZUIM2j.mp4" type="video/mp4" ></video>
+        
+    <button class="rainbow rainbow-1" onclick="playSong()">Dale ritmo</button>
+    <img id="movingGif" src="spongebob-spongebob-meme.gif" style="position:relative; left:0px;" width="500" height="500">
+    <audio id="song" src="Bob Esponja (Dembow remix).mp3"></audio>
+    
+    <script>
+    function playSong() {
+        var song = document.getElementById("song");
+        var gif = document.getElementById("movingGif");
+        song.play();
+        var pos = 0;
+        var interval = setInterval(frame, 10);
+        function frame() {
+            if (pos == 700) {
+                clearInterval(interval);
+            } else {
+                pos++;
+                gif.style.left = pos + 'px';
+            }
+        }
+    }
+    </script>
+</body>
+</html>
